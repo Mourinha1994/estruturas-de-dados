@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Vetores;
+
+Vetor vetor = new Vetor(5);
+
+vetor.Adiciona("Macã");
+vetor.Adiciona("Laranja");
