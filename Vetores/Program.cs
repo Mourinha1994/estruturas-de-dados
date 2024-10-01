@@ -2,5 +2,16 @@
 
 Vetor vetor = new Vetor(5);
 
-vetor.Adiciona("Macã");
-vetor.Adiciona("Laranja");
+try
+{
+    vetor.Adiciona("Maçã");
+    vetor.Adiciona("Laranja");
+    vetor.Adiciona("Bergamota");
+    vetor.Adiciona("Banana");
+    vetor.Adiciona("Uva");
+    vetor.Adiciona("Kiwi");
+}
+catch (Exception)
+{
+	throw;
+}
