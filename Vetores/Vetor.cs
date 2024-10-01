@@ -1,4 +1,6 @@
-﻿namespace Vetores;
+﻿using System.Text;
+
+namespace Vetores;
 
 internal class Vetor
 {
@@ -44,8 +46,23 @@ internal class Vetor
         return "";
     }
 
-    public int Tamanho()
+    public int Tamanho() => _tamanho;
+
+    public override string ToString()
     {
-        return 0;
+        var result = new StringBuilder();
+
+        result
+            .AppendLine("Elementos do vetor: ")
+            .AppendLine("");
+
+        for (int i = 0; i <  _elementos.Length; i++)
+        {
+            if (_elementos[i] != null)
+                result.AppendLine($"[{_elementos[i]}]");
+        }
+
+        return result.ToString();
     }
+    
 }

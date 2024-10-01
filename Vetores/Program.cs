@@ -8,8 +8,12 @@ try
     vetor.Adiciona("Laranja");
     vetor.Adiciona("Bergamota");
     vetor.Adiciona("Banana");
-    vetor.Adiciona("Uva");
-    vetor.Adiciona("Kiwi");
+    vetor.Adiciona("Ameixa");
+
+    Console.WriteLine($"Quantidade de elementos do vetor: {vetor.Tamanho()}");
+    Console.WriteLine(vetor);
+
+
 }
 catch (Exception)
 {
